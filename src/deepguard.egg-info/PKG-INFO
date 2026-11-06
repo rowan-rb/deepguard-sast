@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: deepguard
+Version: 0.1.0
+Summary: A Static Application Security Testing (SAST) tool for AI-generated code.
+Requires-Python: >=3.12
+Requires-Dist: typer>=0.9.0
+Requires-Dist: rich>=13.0.0

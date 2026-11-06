@@ -1,0 +1,17 @@
+sinks:
+  command_injection:
+    severity: CRITICAL
+    modules:
+      - { module: "os", function: "system" }
+      - { module: "os", function: "popen" }
+      - { module: "subprocess", function: "call" }
+      - { module: "subprocess", function: "run" }
+  sql_injection:
+    severity: CRITICAL
+    modules:
+      - { module: "cursor", function: "execute" }
+dangerous_builtins:
+  - name: "eval"
+    severity: HIGH
+  - name: "exec"
+    severity: HIGH
